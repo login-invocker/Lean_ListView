@@ -155,7 +155,6 @@ public class Play extends AppCompatActivity {
         model = Gneratel.generalLever(score);
         displayNewLevel(model);
     }
-
     public void check_true(View view) {
         if (model.correctWrong == true) {
             score += 1;

@@ -47,8 +47,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:background="#ffffff"
         android:onClick="check_true"
-
-        android:src="@drawable/ic_check_true" />
+        android:src="@drawable/true_lan" />
 
 
     <ImageView
@@ -60,7 +59,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:background="#ffffff"
         android:onClick="check_false"
-        android:src="@drawable/ic_check_false" />
+        android:src="@drawable/false_lan" />
 
     <ProgressBar
         android:id="@+id/progressBar_timer_task"

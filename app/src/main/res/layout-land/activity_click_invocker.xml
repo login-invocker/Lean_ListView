@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_application"
+    android:background="@drawable/bg_lan"
     tools:context=".Click_Invocker">
 
     <Button
         android:id="@+id/btnplay"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
         android:layout_centerInParent="true"
         android:background="@drawable/ic_play"
         android:onClick="Invocker" />
+
     <TextView
         style="@style/BigText"
         android:layout_width="wrap_content"
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_30sdp"
         android:layout_marginBottom="50dp"
         android:layout_toLeftOf="@+id/btnplay"
         android:background="@drawable/ic_share"
@@ -36,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginBottom="50dp"
         android:layout_toRightOf="@id/btnplay"
         android:background="@drawable/ic_rate"
@@ -44,19 +47,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_alignParentBottom="true"
-        android:text="Share"
-        android:layout_toLeftOf="@+id/btnplay"
+        android:layout_marginRight="@dimen/_35sdp"
         android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_toLeftOf="@+id/btnplay"
+        android:text="Share"
 
         android:textColor="#ffffff"
         android:textSize="@dimen/_20sdp" />
+
     <TextView
-        android:layout_toRightOf="@id/btnplay"
-    android:layout_marginBottom="@dimen/_20sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_toRightOf="@id/btnplay"
         android:text="Rate Me"
         android:textColor="#ffffff"
         android:textSize="@dimen/_20sdp" />
