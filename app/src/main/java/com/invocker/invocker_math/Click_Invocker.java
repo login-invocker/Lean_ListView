@@ -58,4 +58,9 @@ public class Click_Invocker extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    public void rank(View view) {
+        Intent intent=new Intent(this,ListUserActivity.class);
+        startActivity(intent);
+    }
 }
