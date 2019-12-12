@@ -2,9 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark">
-
+    android:background="@drawable/bg_dialog_engame">
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_fun"
+        android:id="@+id/img_ic_fun"
+        />
     <RelativeLayout
+        android:layout_below="@+id/img_ic_fun"
         android:layout_centerHorizontal="true"
         android:id="@+id/layout_sco"
         android:layout_width="wrap_content"

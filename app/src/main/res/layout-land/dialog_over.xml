@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark">
 
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_engame">
+    <ImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_fun"
+        android:id="@+id/img_ic_fun"
+        />
     <RelativeLayout
         android:layout_centerHorizontal="true"
         android:id="@+id/layout_sco"
@@ -34,11 +40,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_sco"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
         android:hint="Enter your name here"
         android:textColor="@color/colorAccent" />
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_name_user"

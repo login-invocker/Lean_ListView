@@ -13,6 +13,7 @@
         android:layout_centerInParent="true"
         android:background="@drawable/ic_play"
         android:onClick="Invocker" />
+
     <TextView
         style="@style/BigText"
         android:layout_width="wrap_content"
@@ -45,18 +46,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Share"
-        android:layout_toLeftOf="@+id/btnplay"
         android:layout_marginBottom="@dimen/_20sdp"
-
+        android:layout_toLeftOf="@+id/btnplay"
+        android:fontFamily="cursive"
+        android:text="Share"
         android:textColor="#ffffff"
         android:textSize="@dimen/_20sdp" />
+
     <TextView
-        android:layout_toRightOf="@id/btnplay"
-        android:layout_marginBottom="@dimen/_20sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_toRightOf="@id/btnplay"
+        android:fontFamily="cursive"
         android:text="Rate Me"
         android:textColor="#ffffff"
         android:textSize="@dimen/_20sdp" />

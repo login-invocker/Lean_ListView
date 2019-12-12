@@ -53,11 +53,12 @@
         android:layout_marginBottom="@dimen/_20sdp"
         android:layout_toLeftOf="@+id/btnplay"
         android:text="Share"
-
+        android:fontFamily="cursive"
         android:textColor="#ffffff"
         android:textSize="@dimen/_20sdp" />
 
     <TextView
+        android:fontFamily="cursive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
