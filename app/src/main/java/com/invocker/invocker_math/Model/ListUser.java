@@ -14,9 +14,5 @@ public class ListUser{
         return userScopes;
     }
 
-    public void setUserScopes(List<UserScope> userScopes) {
-        this.userScopes = userScopes;
-    }
-
     private List<UserScope> userScopes;
 }

@@ -41,7 +41,7 @@ public class OverDialog extends Dialog {
         this.score = score;
         setContentView(R.layout.dialog_over);
         initViews();
-        dialogScore.setText("Score:" + score);
+        dialogScore.setText(context.getString(R.string.scope)+": " + score);
         addEvent();
     }
 
@@ -66,7 +66,7 @@ public class OverDialog extends Dialog {
             @Override
             public void onClick(View v) {
                 if (edtNameUser.getText().toString().trim().isEmpty()) {
-                    Toast.makeText(context, "Input Your name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Your must input name", Toast.LENGTH_SHORT).show();
                 } else {
 
 

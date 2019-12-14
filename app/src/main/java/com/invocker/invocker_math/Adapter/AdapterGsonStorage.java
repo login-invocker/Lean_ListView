@@ -1,10 +1,8 @@
 package com.invocker.invocker_math.Adapter;
 
 import android.content.Context;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.invocker.invocker_math.Model.ListUser;
 import com.invocker.invocker_math.Model.UserScope;
 
@@ -12,7 +10,6 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,9 +53,9 @@ public class AdapterGsonStorage {
             // Ghi dữ liệu.
             out.write(name.getBytes());
             out.close();
-            Toast.makeText(context, "File saved!", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(context, "File saved!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
-            Toast.makeText(context, "Error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
+           // Toast.makeText(context, "Error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -75,15 +72,13 @@ public class AdapterGsonStorage {
             }
             this.object = sb.toString();
         } catch (Exception e) {
-            Toast.makeText(context, "Error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(context, "Error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
         return this.object;
     }
 
     public ListUser stringtoOjbect(String str) {
         Gson gson = new Gson();
-        /*Type founderListType = new TypeToken<ArrayList<UserScope>>() {
-        }.getType();*/
         ListUser founderList = gson.fromJson(str, ListUser.class);
         return founderList;
     }

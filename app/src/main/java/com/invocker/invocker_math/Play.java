@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,6 +43,7 @@ public class Play extends AppCompatActivity {
     private Random random;
     private int score = 0;
     private Context context;
+    private OverDialog dialog;
 
     private void initViews() {
         txtResult = findViewById(R.id.txt_result);
@@ -51,6 +54,7 @@ public class Play extends AppCompatActivity {
         btnCheckFalse = findViewById(R.id.btn_check_false);
         relativeLayout = findViewById(R.id.play_screen);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +71,7 @@ public class Play extends AppCompatActivity {
         createTimerTask();
 
     }
+
     private void createTimerTask() {
         timer = new Timer();
         timerTask = new TimerTask() {
@@ -90,27 +95,23 @@ public class Play extends AppCompatActivity {
         btnCheckTrue.setEnabled(false);
         btnCheckFalse.setEnabled(false);
         cancelTimer();
-        //cancel ui
-  /*      new AlertDialog.Builder(this).setTitle("Game Over").setMessage("Your score: " + score).setPositiveButton(R.string.replay, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                btnCheckFalse.setEnabled(true);
-                btnCheckTrue.setEnabled(true);
-                txtScore.setText("0");
-                Play.this.score = 0;
-                nextLevel(score);
-            }
-        }).setNegativeButton("Home", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                Play.this.finish();
-            }
-        }).setIcon(R.drawable.ic_game_over).show();*/
-        OverDialog dialog = new OverDialog(Play.this, score);
+        dialog = new OverDialog(Play.this, score);
         dialog.setCanceledOnTouchOutside(false);
-        dialog.show();
+        try {
+            dialog.show();
+
+        }catch (Exception e){
+
+        }
+
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
     private void cancelTimer() {
@@ -155,6 +156,7 @@ public class Play extends AppCompatActivity {
         model = Gneratel.generalLever(score);
         displayNewLevel(model);
     }
+
     public void check_true(View view) {
         if (model.correctWrong == true) {
             score += 1;

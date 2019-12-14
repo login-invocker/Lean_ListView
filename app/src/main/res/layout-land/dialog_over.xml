@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_sco"
         android:layout_marginTop="@dimen/_15sdp"
-        android:hint="Enter your name here"
+        android:hint="@string/edt_name"
         android:textColor="@color/colorAccent" />
 
     <LinearLayout
@@ -55,7 +55,7 @@
 
         <Button
             android:layout_width="0dp"
-            android:text="Home"
+            android:text="@string/btn_home"
             android:id="@+id/btn_dialog_home"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
@@ -63,11 +63,12 @@
         <Button
             android:layout_width="0dp"
             android:id="@+id/btn_chiase"
+            android:text="@string/btnSave"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Button
-            android:text="Again"
+            android:text="@string/btn_agan"
             android:id="@+id/btn_play_again"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

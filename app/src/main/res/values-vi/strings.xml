@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Invocker-Math</string>
+    <string name="replay">Replay</string>
+    <string name="play">Chơi</string>
+    <string name="highest">Điểm cao nhất</string>
+    <string name="Share">Chia sẻ</string>
+    <string name="rate">Rate Me</string>
+    <string name="rank">Rank</string>
+    <string name="play_name">Người chơi </string>
+    <string name="poins">Điểm</string>
+    <string name="scope">Điểm</string>
+    <string name="best">Best</string>
+    <string name="edt_name">Nhập tên của bạn ở đây</string>
+    <string name="btn_home">Home</string>
+    <string name="btnSave">Lưu lại</string>
+    <string name="btn_agan">Chơi lại</string>
+    <string-array name="language_option">
+        <item>Tieng anh</item>
+        <item>Tieng Viet</item>
+
+    </string-array>
+</resources>

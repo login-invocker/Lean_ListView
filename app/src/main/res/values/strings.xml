@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Invocker-Math</string>
     <string name="replay">Replay</string>
+    <string name="play">Play</string>
+    <string name="highest">Highest point</string>
+    <string name="Share">Share</string>
+    <string name="rate">Rate Me</string>
+    <string name="rank">Rank</string>
+    <string name="play_name">Play name</string>
+    <string name="poins">Points</string>
+    <string name="scope">Score</string>
+    <string name="best">Best</string>
+    <string name="edt_name">Enter your name here</string>
+    <string name="btn_home">Home</string>
+    <string name="btnSave">Save</string>
+    <string name="btn_agan">Again</string>
+    <string-array name="language_option">
+        <item>English</item>
+        <item>vietnamese</item>
+
+    </string-array>
 </resources>

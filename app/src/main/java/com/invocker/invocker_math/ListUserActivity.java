@@ -32,9 +32,15 @@ public class ListUserActivity extends AppCompatActivity {
     }
 
     private void addData() {
+        try {
 
-        AdapterGsonStorage newStorage = new AdapterGsonStorage(this);
-        ListUser list = newStorage.stringtoOjbect(newStorage.readData());
-        listUser=list.getUserScopes();
+            AdapterGsonStorage newStorage = new AdapterGsonStorage(this);
+            ListUser list = newStorage.stringtoOjbect(newStorage.readData());
+            listUser = list.getUserScopes();
+        } catch (Exception e) {
+
+        }
+
     }
 }
+

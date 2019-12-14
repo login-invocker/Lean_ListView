@@ -17,6 +17,10 @@ public class UserScope {
     public void setScope(int scope) {
         this.scope = scope;
     }
+
+    public UserScope() {
+    }
+
     public UserScope(String name, int scope) {
         this.name = name;
         this.scope = scope;
